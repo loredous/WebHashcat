@@ -45,9 +45,6 @@ services:
       - variables.env
     volumes:
       - ./Files:/webhashcat/Files
-    depends_on:
-      - redis
-      - db
     networks:
       - webhashcat
     depends_on:
